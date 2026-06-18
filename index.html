@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liberation Pubs & Bars — Summer Newsletter</title>
+  <title>Liberation Pubs &amp; Bars — Premium Summer Newsletter</title>
   <style>
     :root {
       color-scheme: light;
-      --bg: #f4eee4;
+      --bg: #f3ecdf;
       --sheet: #fffaf1;
       --paper: #fffdf8;
-      --ink: #1d2328;
-      --muted: #66737d;
-      --faint: #8b959d;
-      --line: #e6dccd;
-      --line-2: #d7c8b1;
-      --accent: #c85c3b;
-      --accent-2: #d9a441;
-      --accent-3: #346f7d;
-      --green: #537a5d;
-      --shadow: 0 18px 50px rgba(39, 31, 21, 0.12);
-      --radius-xl: 28px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
+      --ink: #1a211f;
+      --muted: #5f6b67;
+      --soft: #8d968f;
+      --line: #e5d8c6;
+      --line-2: #d8c5a8;
+      --green: #1f4d43;
+      --green-2: #2d6657;
+      --gold: #bf8d39;
+      --gold-2: #d6b36c;
+      --terracotta: #ad5534;
+      --shadow: 0 22px 60px rgba(34, 26, 17, .11);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
       --radius-sm: 12px;
-      --max: 760px;
-      --serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      --max: 820px;
+      --serif: "Iowan Old Style", Georgia, "Palatino Linotype", serif;
       --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
@@ -35,13 +36,15 @@
       font-family: var(--sans);
       color: var(--ink);
       background:
-        radial-gradient(circle at top left, rgba(201, 133, 78, .10), transparent 24%),
-        radial-gradient(circle at 90% 12%, rgba(52, 111, 125, .12), transparent 22%),
-        linear-gradient(180deg, #f7f1e7 0%, var(--bg) 100%);
-      padding: 28px 16px 40px;
+        radial-gradient(circle at 0% 0%, rgba(31, 77, 67, .10), transparent 24%),
+        radial-gradient(circle at 100% 10%, rgba(191, 141, 57, .14), transparent 20%),
+        linear-gradient(180deg, #f8f2e8 0%, var(--bg) 100%);
+      padding: 26px 16px 40px;
     }
 
     a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
     .wrap {
       max-width: var(--max);
       margin: 0 auto;
@@ -50,29 +53,28 @@
     .preheader {
       max-width: var(--max);
       margin: 0 auto 12px;
-      font-size: .78rem;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--faint);
+      padding: 0 6px;
       display: flex;
       justify-content: space-between;
       gap: 16px;
-      padding: 0 4px;
+      color: var(--soft);
+      font-size: .78rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
     }
 
     .email {
       background: var(--sheet);
       border: 1px solid var(--line);
       border-radius: 34px;
-      box-shadow: var(--shadow);
       overflow: hidden;
+      box-shadow: var(--shadow);
     }
 
     .masthead {
-      padding: 26px 28px 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,251,244,.96));
+      padding: 22px 26px 18px;
       border-bottom: 1px solid var(--line);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,250,241,.96));
     }
 
     .masthead-top {
@@ -80,72 +82,65 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      margin-bottom: 16px;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 14px;
+      min-width: 0;
     }
 
-    .mark {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      background:
-        radial-gradient(circle at 30% 28%, rgba(255,255,255,.9), transparent 20%),
-        linear-gradient(145deg, #deaa61, #cb6a42 65%, #8a3f35);
-      position: relative;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+    .brand-logo {
+      width: 150px;
+      flex: 0 0 auto;
+      filter: drop-shadow(0 1px 0 rgba(255,255,255,.8));
     }
 
-    .mark:before {
-      content: "";
-      position: absolute;
-      inset: 13px 13px 11px 13px;
-      border-radius: 999px;
-      border: 2px solid rgba(255,255,255,.85);
+    .brand-copy {
+      min-width: 0;
     }
 
-    .brand h1 {
+    .brand-copy h1 {
       margin: 0;
       font-family: var(--serif);
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+      line-height: 1.08;
       letter-spacing: -.02em;
-      line-height: 1;
     }
 
-    .brand p {
-      margin: 4px 0 0;
+    .brand-copy p {
+      margin: 5px 0 0;
       color: var(--muted);
-      font-size: .9rem;
+      font-size: .92rem;
+      line-height: 1.45;
     }
 
     .tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 9px 12px;
+      padding: 10px 13px;
       border-radius: 999px;
-      background: #f8efe0;
-      color: #9d6a28;
-      border: 1px solid #ead3ae;
+      border: 1px solid #e5d3b0;
+      background: #fbf1df;
+      color: #9c6a20;
       font-size: .8rem;
       white-space: nowrap;
     }
 
     .hero {
-      padding: 28px;
+      padding: 26px;
       border-bottom: 1px solid var(--line);
       background:
-        linear-gradient(180deg, rgba(255,253,248,.92), rgba(247,241,231,.92));
+        linear-gradient(180deg, rgba(255,255,255,.75), rgba(248,241,230,.85)),
+        linear-gradient(135deg, rgba(31, 77, 67, .05), rgba(214, 179, 108, .05));
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 20px;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
       align-items: stretch;
     }
 
@@ -153,31 +148,37 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: .77rem;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      color: #9a6c31;
       margin-bottom: 14px;
+      color: #94702f;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .75rem;
+    }
+
+    .hero h2,
+    .section h3,
+    .card h4,
+    .callout h4 {
+      font-family: var(--serif);
+      letter-spacing: -.03em;
+      margin: 0;
     }
 
     .hero h2 {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(2.3rem, 5vw, 4.2rem);
+      font-size: clamp(2.35rem, 5vw, 4.4rem);
       line-height: .95;
-      letter-spacing: -.04em;
-      max-width: 10ch;
+      max-width: 9.5ch;
     }
 
     .hero p {
       margin: 16px 0 0;
-      font-size: 1rem;
-      line-height: 1.7;
       color: var(--muted);
+      line-height: 1.74;
+      font-size: 1rem;
       max-width: 58ch;
     }
 
-    .hero-cta {
+    .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -191,239 +192,203 @@
       justify-content: center;
       padding: 0 16px;
       border-radius: 999px;
-      text-decoration: none;
       border: 1px solid var(--line-2);
       background: var(--paper);
       color: var(--ink);
-      font-weight: 600;
+      text-decoration: none;
       font-size: .94rem;
-      box-shadow: 0 1px 0 rgba(255,255,255,.7) inset;
+      font-weight: 600;
+      box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
     }
 
     .button.primary {
-      background: linear-gradient(180deg, #df8a54, #c85c3b);
+      background: linear-gradient(180deg, #dba04c, #bf8d39);
       border-color: transparent;
       color: white;
     }
 
-    .button.secondary {
-      background: linear-gradient(180deg, #f7ead4, #f1dfbf);
-      border-color: #e0caa0;
-      color: #6f4b21;
+    .button.dark {
+      background: linear-gradient(180deg, #284e46, #1f4d43);
+      border-color: transparent;
+      color: #fff;
     }
 
-    .feature {
+    .visual {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 12px;
+      min-height: 100%;
+    }
+
+    .photo-card {
       border-radius: 26px;
       overflow: hidden;
-      background:
-        linear-gradient(180deg, rgba(52,111,125,.08), rgba(200,92,59,.08)),
-        #fdf9f0;
       border: 1px solid var(--line);
-      min-height: 100%;
+      background: #fff;
+      box-shadow: 0 8px 30px rgba(42, 29, 11, .08);
       position: relative;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 16px;
     }
 
-    .sun-art {
+    .photo-card figure {
+      margin: 0;
       position: relative;
-      border-radius: 22px;
-      min-height: 246px;
-      background:
-        radial-gradient(circle at 28% 24%, rgba(255,255,255,.55), transparent 10%),
-        radial-gradient(circle at 68% 30%, rgba(255,255,255,.22), transparent 10%),
-        radial-gradient(circle at 50% 18%, rgba(255,206,110,.85), rgba(255,206,110,.36) 22%, rgba(255,206,110,.04) 58%, transparent 62%),
-        linear-gradient(180deg, #9fd4e2 0%, #cfe8ed 24%, #f7dfb7 24%, #f8d5a0 35%, #f5c28a 46%, #efae6f 60%, #d67d4a 100%);
-      overflow: hidden;
-      border: 1px solid rgba(0,0,0,.05);
     }
 
-    .sun-art:before,
-    .sun-art:after {
-      content: "";
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-photo {
+      min-height: 326px;
+      background: #d8e4df;
+    }
+
+    .hero-photo .overlay {
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 44%;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.06)),
-        linear-gradient(90deg, #47635b 0 11%, #5f8166 11% 23%, #46645b 23% 35%, #6b8d6d 35% 49%, #54755e 49% 62%, #6d8d72 62% 76%, #4e6c5a 76% 100%);
-      clip-path: polygon(0 25%, 14% 16%, 28% 24%, 39% 13%, 51% 24%, 63% 15%, 77% 26%, 88% 18%, 100% 24%, 100% 100%, 0 100%);
-      opacity: .95;
-    }
-
-    .sun-art:after {
-      height: 34%;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0), rgba(0,0,0,.09)),
-        linear-gradient(90deg, #3f5d4d 0 13%, #60806d 13% 24%, #3f5f57 24% 38%, #577765 38% 54%, #445f52 54% 71%, #5d8067 71% 100%);
-      clip-path: polygon(0 33%, 12% 28%, 22% 38%, 35% 25%, 48% 36%, 61% 24%, 75% 31%, 86% 27%, 100% 35%, 100% 100%, 0 100%);
-      opacity: .88;
-    }
-
-    .feature-card {
+      inset: auto 16px 16px 16px;
+      background: rgba(255, 255, 250, .84);
+      border: 1px solid rgba(255,255,255,.62);
       border-radius: 18px;
-      background: rgba(255,255,255,.76);
-      border: 1px solid rgba(97, 80, 44, .12);
-      padding: 14px;
-      backdrop-filter: blur(6px);
+      padding: 12px 14px;
+      backdrop-filter: blur(10px);
     }
 
-    .feature-card .label {
-      color: #906128;
+    .overlay .kicker {
+      color: #8f6d31;
       text-transform: uppercase;
       letter-spacing: .14em;
-      font-size: .73rem;
-      margin-bottom: 8px;
+      font-size: .72rem;
+      margin-bottom: 5px;
     }
 
-    .feature-card strong {
+    .overlay strong {
       display: block;
-      font-family: var(--serif);
-      font-size: 1.18rem;
-      line-height: 1.2;
-      margin-bottom: 8px;
+      font-size: 1rem;
+      line-height: 1.35;
     }
 
-    .feature-card p {
-      margin: 0;
+    .overlay span {
+      display: block;
+      margin-top: 6px;
       color: var(--muted);
-      line-height: 1.55;
-      font-size: .95rem;
+      font-size: .9rem;
+      line-height: 1.45;
+    }
+
+    .feature-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .mini-photo {
+      min-height: 174px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .mini-photo .overlay {
+      inset: auto 12px 12px 12px;
+      padding: 10px 12px;
     }
 
     .content {
-      padding: 24px 28px 30px;
+      padding: 24px 26px 28px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-
-    .story {
+    .section {
       border: 1px solid var(--line);
-      border-radius: 24px;
+      border-radius: 28px;
       background: linear-gradient(180deg, #fffdf8, #fbf6ec);
       overflow: hidden;
     }
 
-    .story-body {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-
-    .section {
+    .section-block {
       padding: 22px;
       border-top: 1px solid var(--line);
     }
 
-    .section:first-child { border-top: 0; }
+    .section-block:first-child { border-top: 0; }
 
     .section h3 {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: 1.55rem;
-      line-height: 1.15;
-      letter-spacing: -.02em;
+      font-size: 1.75rem;
+      line-height: 1.08;
+      margin-bottom: 10px;
     }
 
     .section p {
-      margin: 12px 0 0;
-      line-height: 1.7;
+      margin: 0;
       color: var(--muted);
+      line-height: 1.72;
       max-width: 68ch;
     }
 
-    .card-row {
+    .cards {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
       margin-top: 16px;
     }
 
     .card {
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(221, 206, 184, .9);
       border-radius: 20px;
-      background: white;
-      border: 1px solid var(--line);
-      padding: 18px;
-      box-shadow: 0 1px 0 rgba(255,255,255,.95) inset;
+      padding: 16px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
     }
 
-    .card .kicker {
-      font-size: .73rem;
-      letter-spacing: .16em;
+    .card .label {
+      color: #90713b;
       text-transform: uppercase;
-      color: #8a6936;
+      letter-spacing: .16em;
+      font-size: .72rem;
       margin-bottom: 8px;
     }
 
     .card h4 {
-      margin: 0;
-      font-size: 1.08rem;
-      line-height: 1.25;
+      font-size: 1.12rem;
+      line-height: 1.22;
     }
 
-    .card ul {
-      margin: 12px 0 0;
-      padding: 0;
-      list-style: none;
+    .card p {
+      margin-top: 10px;
+      font-size: .94rem;
+      line-height: 1.6;
+    }
+
+    .split {
       display: grid;
-      gap: 9px;
-      color: var(--muted);
-    }
-
-    .card li {
-      position: relative;
-      padding-left: 18px;
-      line-height: 1.55;
-    }
-
-    .card li:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: .58em;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    .promo {
-      border-radius: 22px;
-      border: 1px solid #eadcc5;
-      background: linear-gradient(180deg, #fff4dc, #fde7bc);
-      padding: 18px;
+      grid-template-columns: 1fr .92fr;
+      gap: 14px;
+      align-items: start;
       margin-top: 16px;
     }
 
-    .promo .date {
-      color: #986e24;
+    .callout {
+      border-radius: 22px;
+      border: 1px solid #dfd0b8;
+      background: linear-gradient(180deg, #fff4dc, #fdebc6);
+      padding: 16px;
+    }
+
+    .callout .label {
+      color: #997228;
       text-transform: uppercase;
       letter-spacing: .16em;
-      font-size: .74rem;
+      font-size: .72rem;
+      margin-bottom: 8px;
     }
 
-    .promo h4 {
-      margin: 8px 0 0;
-      font-family: var(--serif);
-      font-size: 1.32rem;
-      line-height: 1.18;
+    .callout h4 {
+      font-size: 1.25rem;
+      line-height: 1.15;
+      margin-bottom: 10px;
     }
 
-    .promo p {
-      margin: 10px 0 0;
-      color: #6d5a3e;
-      max-width: 62ch;
-      line-height: 1.65;
-    }
+    .callout p { color: #68573d; }
 
     .list-grid {
       display: grid;
@@ -433,76 +398,81 @@
     }
 
     .mini {
-      padding: 14px;
       border-radius: 18px;
-      background: rgba(255,255,255,.76);
       border: 1px solid var(--line);
+      background: rgba(255,255,255,.9);
+      padding: 14px;
     }
 
     .mini .label {
-      color: #98723b;
-      font-size: .73rem;
-      letter-spacing: .14em;
+      color: #90713b;
       text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .72rem;
       margin-bottom: 8px;
     }
 
     .mini strong {
       display: block;
+      margin-bottom: 6px;
       font-size: 1rem;
-      margin-bottom: 4px;
     }
 
-    .mini span { color: var(--muted); line-height: 1.5; }
+    .mini span {
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: .94rem;
+    }
 
-    .two-col {
+    .loyalty-row {
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
+      grid-template-columns: 1.06fr .94fr;
       gap: 14px;
-      margin-top: 14px;
+      margin-top: 16px;
+      align-items: start;
     }
 
     .loyalty {
       border-radius: 22px;
-      border: 1px solid #e4d4b6;
+      border: 1px solid #dfd0b8;
       background: linear-gradient(180deg, #fff5df, #fdecc8);
-      padding: 18px;
+      padding: 16px;
     }
 
     .loyalty .number {
+      margin-top: 8px;
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       letter-spacing: .08em;
-      color: #7a5518;
-      margin-top: 6px;
+      color: #7d5a19;
     }
 
     .loyalty .points {
       display: flex;
-      align-items: end;
       justify-content: space-between;
-      gap: 16px;
-      margin-top: 14px;
+      gap: 14px;
+      align-items: end;
       padding-top: 14px;
-      border-top: 1px solid rgba(130, 104, 56, .2);
+      margin-top: 14px;
+      border-top: 1px solid rgba(128, 93, 40, .18);
     }
 
     .loyalty .points span {
-      color: #766146;
+      color: #6f6048;
       line-height: 1.4;
       max-width: 18ch;
       font-size: .93rem;
     }
 
     .loyalty .points strong {
-      font-size: 1.55rem;
-      color: #5f4216;
+      font-size: 1.5rem;
+      color: #614112;
     }
 
     .footer {
-      padding: 22px 28px 28px;
       border-top: 1px solid var(--line);
-      background: linear-gradient(180deg, #fcf7ef, #f4ecdf);
+      background: linear-gradient(180deg, #fcf7ef, #f6eddc);
+      padding: 20px 26px 28px;
     }
 
     .footer-grid {
@@ -511,25 +481,35 @@
       gap: 16px;
     }
 
-    .foot-card {
-      padding-top: 0;
-    }
-
     .foot-card .label {
+      color: #937242;
       text-transform: uppercase;
       letter-spacing: .16em;
-      font-size: .73rem;
-      color: #92714b;
+      font-size: .72rem;
       margin-bottom: 10px;
     }
 
-    .foot-card p,
-    .foot-card a {
+    .foot-card p, .foot-card a {
       margin: 0;
       color: var(--muted);
-      text-decoration: none;
       line-height: 1.6;
+      text-decoration: none;
     }
+
+    .credits {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--soft);
+      font-size: .88rem;
+      line-height: 1.55;
+    }
+
+    .credits a { color: var(--green); }
 
     .foot-links {
       display: flex;
@@ -539,287 +519,303 @@
       align-items: center;
     }
 
-    .fineprint {
-      margin-top: 18px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      color: var(--faint);
-      font-size: .9rem;
-      line-height: 1.6;
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
+    .foot-links a { color: var(--green); text-decoration: none; }
+
+    .caption {
+      color: var(--soft);
+      font-size: .82rem;
+      line-height: 1.45;
+      margin-top: 8px;
     }
 
-    .split {
+    .stack {
       display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 14px;
-      align-items: start;
+      gap: 10px;
     }
 
-    .callout {
-      border-radius: 20px;
-      padding: 16px;
-      border: 1px solid var(--line);
-      background: #fff;
+    .brand-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 2px;
+      color: var(--soft);
+      font-size: .86rem;
     }
 
-    .callout .title {
-      text-transform: uppercase;
-      letter-spacing: .14em;
-      font-size: .72rem;
-      color: #8a6936;
-      margin-bottom: 8px;
-    }
+    .brand-strip img { width: 120px; }
 
-    .callout strong {
-      display: block;
-      font-size: 1.08rem;
-      margin-bottom: 8px;
-    }
-
-    .callout p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    @media (max-width: 860px) {
-      body { padding: 14px 10px 24px; }
-      .hero-grid,
-      .card-row,
-      .two-col,
-      .list-grid,
-      .footer-grid,
-      .split {
+    @media (max-width: 900px) {
+      body { padding: 14px 10px 22px; }
+      .hero-grid, .cards, .split, .list-grid, .loyalty-row, .footer-grid {
         grid-template-columns: 1fr;
       }
-      .masthead,
-      .hero,
-      .content,
-      .footer { padding-left: 18px; padding-right: 18px; }
+      .masthead, .hero, .content, .footer { padding-left: 18px; padding-right: 18px; }
       .masthead-top { flex-direction: column; align-items: flex-start; }
+      .preheader { flex-direction: column; }
+      .brand-logo { width: 136px; }
       .foot-links { justify-content: flex-start; }
-      .fineprint { flex-direction: column; }
+      .credits { flex-direction: column; }
+    }
+
+    @media (max-width: 640px) {
+      .hero h2 { max-width: 100%; }
+      .button { width: 100%; }
+      .feature-row { grid-template-columns: 1fr; }
+      .hero-photo { min-height: 280px; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="preheader">
-      <div>Summer newsletter redesign</div>
-      <div>Read online • View in browser</div>
+      <div>Premium summer newsletter redesign</div>
+      <div>Read online • Open in browser</div>
     </div>
 
-    <article class="email" aria-label="Liberation newsletter redesign">
+    <article class="email" aria-label="Liberation Group summer newsletter redesign">
       <header class="masthead">
         <div class="masthead-top">
           <div class="brand">
-            <div class="mark" aria-hidden="true"></div>
-            <div>
+            <img
+              class="brand-logo"
+              src="https://www.liberationgroup.com/content/uploads/2024/10/Liberation_Primary-Logo_Full_colour_1.png"
+              alt="Liberation Group logo"
+            />
+            <div class="brand-copy">
               <h1>Liberation Pubs &amp; Bars</h1>
-              <p>Summer solstice weekend • newsletters that breathe a bit</p>
+              <p>A more premium, more editorial version of the summer send.</p>
             </div>
           </div>
-          <div class="tag">Summer magazine feel • real newsletter structure</div>
+          <div class="tag">Brand-led • image-rich • email-native</div>
         </div>
       </header>
 
       <section class="hero">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow">Hi Tom, the sunshine is back</div>
+            <div class="eyebrow">Summer solstice weekend</div>
             <h2>World Cup nights &amp; sunshine-filled days</h2>
             <p>
-              This version feels more like a proper email newsletter: one strong header, one main story, then clean blocks for the rest.
-              It keeps everything, but gives it the kind of spacing and hierarchy you'd expect from a polished summer send.
+              This version leans harder into the Liberation Group brand: warmer colours, the official logo, strong photography and a more polished
+              newsletter rhythm. It feels less like a flyer and more like a proper hospitality email you’d actually want to open.
             </p>
-            <div class="hero-cta">
+            <div class="buttons">
               <a class="button primary" href="#fathers-day">Book Father’s Day</a>
-              <a class="button secondary" href="#world-cup">See World Cup dates</a>
-              <a class="button" href="#menus">Explore menus</a>
+              <a class="button dark" href="#world-cup">See World Cup nights</a>
+              <a class="button" href="#staycations">Explore staycations</a>
             </div>
+            <p class="caption">
+              Imagery is sourced from Wikimedia Commons and the Liberation logo is taken from the official Liberation Group website.
+            </p>
           </div>
 
-          <aside class="feature">
-            <div class="sun-art" aria-hidden="true"></div>
-            <div class="feature-card">
-              <div class="label">This weekend’s mood</div>
-              <strong>Shady tables, cold drinks, and enough room to actually read the email.</strong>
-              <p>Less billboard. More summer issue. The content still sells, but it no longer shouts over itself.</p>
+          <div class="visual">
+            <div class="photo-card hero-photo">
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Saint_Aubin_harbour_Jersey.jpg/960px-Saint_Aubin_harbour_Jersey.jpg?_=20070715162049"
+                  alt="Saint Aubin harbour, Jersey"
+                />
+                <div class="overlay">
+                  <div class="kicker">Open source photography</div>
+                  <strong>Harbour light, coastal air, and a slower summer pace.</strong>
+                  <span>Saint Aubin harbour, Jersey. Public domain via Wikimedia Commons.</span>
+                </div>
+              </figure>
             </div>
-          </aside>
+            <div class="feature-row">
+              <div class="photo-card mini-photo">
+                <figure>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sunlit_pub_garden_-_geograph.org.uk_-_2789032.jpg?_=20211128050717"
+                    alt="Sunlit pub garden"
+                  />
+                  <div class="overlay">
+                    <div class="kicker">Summer tables</div>
+                    <strong>Shady spots and garden seating.</strong>
+                    <span>Open source image from Wikimedia Commons.</span>
+                  </div>
+                </figure>
+              </div>
+              <div class="photo-card mini-photo">
+                <figure>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Pub_interior_-_geograph.org.uk_-_555584.jpg?_=20110206035009"
+                    alt="Pub interior with warm afternoon light"
+                  />
+                  <div class="overlay">
+                    <div class="kicker">Inside the pub</div>
+                    <strong>Warm, intimate, and properly inviting.</strong>
+                    <span>Howard Selina / CC BY-SA 2.0 via Wikimedia Commons.</span>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="content">
-        <div class="story">
-          <div class="story-body">
-            <div class="section">
-              <div class="eyebrow">Opening story</div>
-              <h3>Pub gardens, terraces and all the sunshine you’ve been waiting for</h3>
-              <p>
-                This summer solstice weekend sees the sunshine return, so the pub gardens and terraces will be ready and waiting for you to enjoy.
-                Think parasols, comfy seating, shady spots and all the sunshine vibes you’ve been waiting for.
-              </p>
-              <div class="card-row">
-                <div class="card">
-                  <div class="kicker">Food &amp; drink</div>
-                  <h4>From breakfast to dinner</h4>
-                  <ul>
-                    <li>Ice-cold pints</li>
-                    <li>Refreshing spritzes</li>
-                    <li>New summer menus</li>
-                    <li>Small plates and bar snacks all day</li>
-                  </ul>
-                </div>
-                <div class="card" id="menus">
-                  <div class="kicker">Family time</div>
-                  <h4>Easy bookings, easy choices</h4>
-                  <ul>
-                    <li>Leisurely brunch</li>
-                    <li>Lunch to dinner</li>
-                    <li>A proper kids menu</li>
-                    <li>Jersey and Guernsey bookings</li>
-                  </ul>
-                </div>
+        <div class="section">
+          <div class="section-block">
+            <div class="eyebrow">Opening story</div>
+            <h3>Pub gardens, terraces and all the sunshine you’ve been waiting for</h3>
+            <p>
+              This summer solstice weekend sees the sunshine return, so the pub gardens and terraces will be ready and waiting for you to enjoy.
+              Think parasols, comfy seating, shady spots and all the sunshine you’ve been waiting for.
+            </p>
+            <div class="cards">
+              <div class="card">
+                <div class="label">Food &amp; drink</div>
+                <h4>Cold pints, refreshing spritzes and the new summer menus</h4>
+                <p>Breakfast to brunch, lunch to dinner, small plates and bar snacks throughout the day.</p>
+              </div>
+              <div class="card">
+                <div class="label">Family time</div>
+                <h4>Easy bookings for the whole weekend</h4>
+                <p>An award-winning kids menu, roomy tables and a proper pace that works for long lunches.</p>
+              </div>
+              <div class="card">
+                <div class="label">Book now</div>
+                <h4>Jersey and Guernsey bookings are open</h4>
+                <p>Use the right venue for the moment, whether it’s dinner, drinks or a full family meet-up.</p>
               </div>
             </div>
+            <div class="buttons">
+              <a class="button primary" href="#menus">Explore food &amp; drink menus</a>
+              <a class="button" href="#bookings">Make a booking</a>
+            </div>
+          </div>
 
-            <div class="section" id="world-cup">
-              <div class="eyebrow">World Cup nights</div>
-              <div class="split">
-                <div>
-                  <h3>Where to watch the FIFA World Cup 2026</h3>
-                  <p>
-                    England surged to a thrilling win against Croatia in their opening fixture last night. Next up for England are Ghana at 9pm on Tuesday.
-                    In the meantime, there are 21 more matches to enjoy with a pint in hand.
-                  </p>
-                </div>
-                <div class="callout">
-                  <div class="title">Key fixtures</div>
-                  <strong>England vs Ghana</strong>
-                  <p>23 Jun, 9pm</p>
-                  <div style="height:10px"></div>
-                  <strong>England vs Panama</strong>
-                  <p>27 Jun, 10pm</p>
-                </div>
+          <div class="section-block" id="world-cup">
+            <div class="eyebrow">World Cup nights</div>
+            <div class="split">
+              <div>
+                <h3>Where to watch the FIFA World Cup 2026</h3>
+                <p>
+                  England surged to a thrilling win against Croatia in their opening fixture last night. Next up for England are Ghana at 9pm on Tuesday.
+                  In the meantime, there are 21 more matches to enjoy with a pint in hand.
+                </p>
               </div>
-              <div class="list-grid">
-                <div class="mini">
-                  <div class="label">On screen</div>
-                  <strong>Every match live</strong>
-                  <span>Big screens and all the tournament action along the way.</span>
-                </div>
-                <div class="mini">
-                  <div class="label">On tap</div>
-                  <strong>Guinness on us</strong>
-                  <span>New sign-ups to the Liberation Loyalty Club get a voucher for a complimentary pint.</span>
-                </div>
-                <div class="mini">
-                  <div class="label">On the menu</div>
-                  <strong>Hearty food</strong>
-                  <span>Proper plates to fuel the occasion, not just filler.</span>
-                </div>
-              </div>
-              <div class="hero-cta" style="margin-top:16px;">
-                <a class="button primary" href="#">Find World Cup pubs</a>
-                <a class="button" href="#">Book your spot</a>
+              <div class="callout">
+                <div class="label">Key fixtures</div>
+                <h4>England vs Ghana</h4>
+                <p>23 Jun, 9pm</p>
+                <div style="height:10px"></div>
+                <h4>England vs Panama</h4>
+                <p>27 Jun, 10pm</p>
               </div>
             </div>
-
-            <div class="section" id="fathers-day">
-              <div class="eyebrow">Father’s Day weekend</div>
-              <h3>The perfect Father’s Day, all weekend long</h3>
-              <p>
-                Father’s Day weekend, 19th–21st June, is almost upon us, and we can’t think of a better excuse to pull up a chair with the main man,
-                and treat him to a proper catch-up over perfectly poured pints, excellent wine and award-winning food.
-              </p>
-              <div class="card-row">
-                <div class="card">
-                  <div class="kicker">Best for</div>
-                  <h4>Brunch, roast, or drinks in the bar</h4>
-                  <ul>
-                    <li>Leisurely brunches</li>
-                    <li>Sunday roasts</li>
-                    <li>Drink-led catch ups</li>
-                    <li>Bookings all weekend</li>
-                  </ul>
-                </div>
-                <div class="card">
-                  <div class="kicker">Backup plan</div>
-                  <h4>Gift vouchers</h4>
-                  <ul>
-                    <li>For the dad who wants choice</li>
-                    <li>Long lunch</li>
-                    <li>Round with friends</li>
-                    <li>Glorious hours at the pub</li>
-                  </ul>
-                </div>
+            <div class="list-grid">
+              <div class="mini">
+                <div class="label">Live screens</div>
+                <strong>Every match, every pub</strong>
+                <span>Selected pubs and bars will show the full tournament live.</span>
               </div>
-              <div class="hero-cta" style="margin-top:16px;">
-                <a class="button primary" href="#">Make a booking in Jersey</a>
-                <a class="button" href="#">Make a booking in Guernsey</a>
-                <a class="button secondary" href="#">Buy a gift voucher</a>
+              <div class="mini">
+                <div class="label">Offer</div>
+                <strong>Guinness on us</strong>
+                <span>New loyalty sign-ups get a complimentary pint voucher in the app.</span>
+              </div>
+              <div class="mini">
+                <div class="label">Atmosphere</div>
+                <strong>Food, pints and the crowd</strong>
+                <span>Not a sports bar gimmick. Just a proper pub when the football’s on.</span>
               </div>
             </div>
+            <div class="buttons">
+              <a class="button dark" href="#">Find World Cup pubs</a>
+              <a class="button" href="#">Book your spot</a>
+            </div>
+          </div>
 
-            <div class="section" id="staycations">
-              <div class="eyebrow">Summer staycations</div>
-              <h3>Looking for a staycation this summer?</h3>
-              <p>
-                Why not hop over to the mainland and stay in one of our sister pubs with rooms. Butcombe Inns and Butcombe Boutique Inns are located in
-                the South Downs, the North Wessex Downs, the Cotswolds, the New Forest and the Mendips.
-              </p>
-              <div class="two-col">
-                <div class="mini">
-                  <div class="label">Rooms</div>
-                  <strong>Stylish, comfortable, and easy to stay in</strong>
-                  <span>Family rooms available, plus dog-friendly rooms so the whole family can join in.</span>
-                </div>
-                <div class="mini">
-                  <div class="label">Offer</div>
-                  <strong>30% off selected Boutique Inns</strong>
-                  <span>Food and drinks available throughout the stay, with proper room-and-pub energy.</span>
-                </div>
+          <div class="section-block" id="fathers-day">
+            <div class="eyebrow">Father’s Day weekend</div>
+            <h3>The perfect Father’s Day, all weekend long</h3>
+            <p>
+              Father’s Day weekend, 19th–21st June, is almost upon us, and we can’t think of a better excuse to pull up a chair with the main man,
+              and treat him to a proper catch-up over perfectly poured pints, excellent wine and award-winning food.
+            </p>
+            <div class="cards">
+              <div class="card">
+                <div class="label">Best for</div>
+                <h4>Brunch, Sunday roast, or drinks in the bar</h4>
+                <p>Bookings are open for the whole weekend, including those who just want to inspect the ale selection.</p>
               </div>
-              <div class="hero-cta" style="margin-top:16px;">
-                <a class="button primary" href="#">Explore Butcombe Boutique Inns</a>
-                <a class="button" href="#">Explore Butcombe Inns</a>
-                <a class="button secondary" href="#">Book a staycation</a>
+              <div class="card">
+                <div class="label">Giftable</div>
+                <h4>Liberty to spend it how he likes</h4>
+                <p>A long lunch, a round with friends, or an excuse to disappear to the pub for a few hours.</p>
+              </div>
+              <div class="card">
+                <div class="label">Practical</div>
+                <h4>Reserve ahead rather than wing it</h4>
+                <p>Weekend bookings go first. Gift vouchers work when the calendar is already full.</p>
               </div>
             </div>
+            <div class="buttons">
+              <a class="button primary" href="#">Make a booking in Jersey</a>
+              <a class="button" href="#">Make a booking in Guernsey</a>
+              <a class="button dark" href="#">Buy a gift voucher</a>
+            </div>
+          </div>
 
-            <div class="section">
-              <div class="eyebrow">Stock up for the weekend</div>
-              <h3>Drinks stores, loyalty points and the practical bits</h3>
-              <p>
-                Liberation Drinks stores stock the Channel Islands’ widest range of wines, spirits, beers, lagers, ciders and soft drinks, with an ever-changing selection of offers.
-              </p>
-              <div class="two-col">
-                <div class="card">
-                  <div class="kicker">Stores</div>
-                  <h4>Stock up in Jersey or Guernsey</h4>
-                  <p style="margin:10px 0 0; color: var(--muted); line-height:1.6;">The usual weekend supplies, without the supermarket energy.</p>
-                  <div class="hero-cta" style="margin-top:14px;">
-                    <a class="button primary" href="#">Visit the Jersey store</a>
-                    <a class="button" href="#">Visit the Guernsey store</a>
-                  </div>
+          <div class="section-block" id="staycations">
+            <div class="eyebrow">Summer staycations</div>
+            <h3>Looking for a staycation this summer?</h3>
+            <p>
+              Why not hop over to the mainland and stay in one of our sister pubs with rooms. Butcombe Inns and Butcombe Boutique Inns are located in
+              some of the most scenic corners of the south of England.
+            </p>
+            <div class="split">
+              <div class="callout">
+                <div class="label">Rooms</div>
+                <h4>Stylish, comfortable and properly practical</h4>
+                <p>Family rooms available, dog-friendly rooms too, and food and drinks throughout the stay.</p>
+              </div>
+              <div class="callout">
+                <div class="label">Offer</div>
+                <h4>30% off selected Boutique Inns</h4>
+                <p>Keep the pub feeling, but make it a night away.</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <a class="button primary" href="#">Explore Butcombe Boutique Inns</a>
+              <a class="button" href="#">Explore Butcombe Inns</a>
+              <a class="button dark" href="#">Book a staycation</a>
+            </div>
+          </div>
+
+          <div class="section-block">
+            <div class="eyebrow">Stock up &amp; loyalty</div>
+            <h3>Drinks stores, loyalty points and the practical bits</h3>
+            <p>
+              Liberation Drinks stores carry the Channel Islands’ widest range of wines, spirits, beers, lagers, ciders and soft drinks, with an
+              ever-changing selection of offers.
+            </p>
+            <div class="loyalty-row">
+              <div class="card">
+                <div class="label">Stores</div>
+                <h4>Stock up in Jersey or Guernsey</h4>
+                <p>The usual weekend supplies, without the supermarket energy.</p>
+                <div class="buttons">
+                  <a class="button primary" href="#">Visit the Jersey store</a>
+                  <a class="button" href="#">Visit the Guernsey store</a>
                 </div>
-                <div class="loyalty" id="loyalty">
-                  <div class="eyebrow" style="margin-bottom:8px;">Loyalty club</div>
-                  <h3 style="font-size:1.4rem; margin:0;">Your membership details</h3>
-                  <div class="number">30581807</div>
-                  <p style="margin:10px 0 0; color:#6d5a3e; line-height:1.6;">Save this number to give to your server when you visit, or use the app or membership card to collect points.</p>
-                  <div class="points">
-                    <span>Your loyalty currency available to spend</span>
-                    <strong>£10.00</strong>
-                  </div>
-                  <div class="hero-cta" style="margin-top:14px;">
-                    <a class="button primary" href="#">See latest loyalty offers</a>
-                  </div>
+              </div>
+              <div class="loyalty">
+                <div class="eyebrow" style="margin-bottom: 8px;">Loyalty club</div>
+                <h3 style="font-size: 1.45rem; margin: 0;">Your membership details</h3>
+                <div class="number">30581807</div>
+                <p style="margin: 10px 0 0; color: #68573d; line-height: 1.65;">
+                  Save this number to give to your server when you visit, or use the app or membership card to collect points.
+                </p>
+                <div class="points">
+                  <span>Your loyalty currency available to spend</span>
+                  <strong>£10.00</strong>
+                </div>
+                <div class="buttons" style="margin-top: 14px;">
+                  <a class="button dark" href="#">See latest loyalty offers</a>
                 </div>
               </div>
             </div>
@@ -832,10 +828,17 @@
           <div class="foot-card">
             <div class="label">Website</div>
             <a href="https://www.liberationgroup.com" target="_blank" rel="noreferrer">www.liberationgroup.com</a>
+            <div class="brand-strip">
+              <img
+                src="https://www.liberationgroup.com/content/uploads/2024/10/Liberation_Primary-Logo_Full_colour_1.png"
+                alt="Liberation Group logo"
+              />
+            </div>
           </div>
           <div class="foot-card">
             <div class="label">Email</div>
             <a href="mailto:info@liberationgroup.com">info@liberationgroup.com</a>
+            <p style="margin-top: 8px;">Brand colours and layout tuned to feel like a premium newsletter rather than a promo blast.</p>
           </div>
           <div class="foot-card">
             <div class="label">Address</div>
@@ -848,8 +851,14 @@
             </p>
           </div>
         </div>
-        <div class="fineprint">
-          <div>Want to change how you receive these emails? Update your preferences or unsubscribe from this list.</div>
+
+        <div class="credits">
+          <div>
+            Images used here:
+            <a href="https://commons.wikimedia.org/wiki/File:Saint_Aubin_harbour_Jersey.jpg" target="_blank" rel="noreferrer">Saint Aubin harbour, Jersey</a>,
+            <a href="https://commons.wikimedia.org/wiki/File:Sunlit_pub_garden_-_geograph.org.uk_-_2789032.jpg" target="_blank" rel="noreferrer">Sunlit pub garden</a>,
+            <a href="https://commons.wikimedia.org/wiki/File:Pub_interior_-_geograph.org.uk_-_555584.jpg" target="_blank" rel="noreferrer">Pub interior</a>.
+          </div>
           <div class="foot-links">
             <a href="#">Update preferences</a>
             <a href="#">Unsubscribe</a>
