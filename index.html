@@ -308,9 +308,36 @@
     .section-block {
       padding: 22px;
       border-top: 1px solid var(--line);
+      border-left: 4px solid var(--section-accent, transparent);
+      background: var(--section-bg, transparent);
     }
 
     .section-block:first-child { border-top: 0; }
+
+    .section-block.story {
+      --section-accent: #8d6a2b;
+      --section-bg: linear-gradient(180deg, #fffaf0, #fcf4e3);
+    }
+
+    .section-block.match {
+      --section-accent: #315f40;
+      --section-bg: linear-gradient(180deg, #f5fbf6, #edf7ef);
+    }
+
+    .section-block.fathers {
+      --section-accent: #9e6b2d;
+      --section-bg: linear-gradient(180deg, #fff8ef, #f8efe0);
+    }
+
+    .section-block.stay {
+      --section-accent: #6c7f6c;
+      --section-bg: linear-gradient(180deg, #f7faf5, #eef5ee);
+    }
+
+    .section-block.loyalty-block {
+      --section-accent: #7d5a19;
+      --section-bg: linear-gradient(180deg, #fff8e9, #f7edd8);
+    }
 
     .section h3 {
       font-size: 1.75rem;
@@ -568,7 +595,7 @@
 <body>
   <div class="wrap">
     <div class="preheader">
-      <div>Premium summer newsletter redesign</div>
+      <div>Summer bookings, match nights and Father’s Day</div>
       <div>Read online • Open in browser</div>
     </div>
 
@@ -583,29 +610,29 @@
             />
             <div class="brand-copy">
               <h1>Liberation Pubs &amp; Bars</h1>
-              <p>A more premium, more editorial version of the summer send.</p>
+              <p>Summer menus, match nights and easy weekend plans.</p>
             </div>
           </div>
-          <div class="tag">Brand-led • image-rich • email-native</div>
+          <div class="tag">Summer at Liberation • Jersey &amp; Guernsey</div>
         </div>
       </header>
 
       <section class="hero">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow">Summer solstice weekend</div>
-            <h2>World Cup nights &amp; sunshine-filled days</h2>
+            <div class="eyebrow">What’s on now</div>
+            <h2>Make the most of the long evenings</h2>
             <p>
-              This version leans harder into the Liberation Group brand: warmer colours, the official logo, strong photography and a more polished
-              newsletter rhythm. It feels less like a flyer and more like a proper hospitality email you’d actually want to open.
+              From terrace lunches to big match nights and Father’s Day bookings, here’s a cleaner, more readable way to bring the best bits of the
+              season together in one place.
             </p>
             <div class="buttons">
-              <a class="button primary" href="#fathers-day">Book Father’s Day</a>
-              <a class="button dark" href="#world-cup">See World Cup nights</a>
-              <a class="button" href="#staycations">Explore staycations</a>
+              <a class="button primary" href="#fathers-day">Book a table</a>
+              <a class="button dark" href="#world-cup">See what’s on</a>
+              <a class="button" href="#staycations">Plan a stay</a>
             </div>
             <p class="caption">
-              Imagery is sourced from Wikimedia Commons and the Liberation logo is taken from the official Liberation Group website.
+              Real open-source imagery and the official Liberation Group logo.
             </p>
           </div>
 
@@ -617,8 +644,8 @@
                   alt="Saint Aubin harbour, Jersey"
                 />
                 <div class="overlay">
-                  <div class="kicker">Open source photography</div>
-                  <strong>Harbour light, coastal air, and a slower summer pace.</strong>
+                  <div class="kicker">Open-source photography</div>
+                  <strong>Harbour light, coastal air and a slower summer pace.</strong>
                   <span>Saint Aubin harbour, Jersey. Public domain via Wikimedia Commons.</span>
                 </div>
               </figure>
@@ -632,7 +659,7 @@
                   />
                   <div class="overlay">
                     <div class="kicker">Summer tables</div>
-                    <strong>Shady spots and garden seating.</strong>
+                    <strong>Shady spots, garden seating and long lunches.</strong>
                     <span>Open source image from Wikimedia Commons.</span>
                   </div>
                 </figure>
@@ -645,7 +672,7 @@
                   />
                   <div class="overlay">
                     <div class="kicker">Inside the pub</div>
-                    <strong>Warm, intimate, and properly inviting.</strong>
+                    <strong>Warm, intimate and properly inviting.</strong>
                     <span>Howard Selina / CC BY-SA 2.0 via Wikimedia Commons.</span>
                   </div>
                 </figure>
@@ -657,141 +684,139 @@
 
       <section class="content">
         <div class="section">
-          <div class="section-block">
-            <div class="eyebrow">Opening story</div>
-            <h3>Pub gardens, terraces and all the sunshine you’ve been waiting for</h3>
+          <div class="section-block story">
+            <div class="eyebrow">Sunny spots</div>
+            <h3>Pub gardens, terraces and lunches that run into the afternoon</h3>
             <p>
-              This summer solstice weekend sees the sunshine return, so the pub gardens and terraces will be ready and waiting for you to enjoy.
-              Think parasols, comfy seating, shady spots and all the sunshine you’ve been waiting for.
+              When the sun shows up, the best seats go first. Book ahead for a table outside, settle in with a spritz or a cold pint, and take your
+              time over the summer menu.
             </p>
             <div class="cards">
               <div class="card">
-                <div class="label">Food &amp; drink</div>
-                <h4>Cold pints, refreshing spritzes and the new summer menus</h4>
-                <p>Breakfast to brunch, lunch to dinner, small plates and bar snacks throughout the day.</p>
+                <div class="label">Outside tables</div>
+                <h4>Reserve the best spot before it disappears</h4>
+                <p>Book the terrace or garden early for easy lunches, after-work drinks and slower weekends.</p>
               </div>
               <div class="card">
-                <div class="label">Family time</div>
-                <h4>Easy bookings for the whole weekend</h4>
-                <p>An award-winning kids menu, roomy tables and a proper pace that works for long lunches.</p>
+                <div class="label">Seasonal menu</div>
+                <h4>Fresh summer food with drinks to match</h4>
+                <p>Think lighter plates, chilled wines, spritzes and the kind of menu that suits a long afternoon.</p>
               </div>
               <div class="card">
-                <div class="label">Book now</div>
-                <h4>Jersey and Guernsey bookings are open</h4>
-                <p>Use the right venue for the moment, whether it’s dinner, drinks or a full family meet-up.</p>
+                <div class="label">Easy plans</div>
+                <h4>Simple bookings for friends, family and workmates</h4>
+                <p>Whether it’s two people or ten, keep the plan low-fuss and let us handle the table.</p>
               </div>
             </div>
             <div class="buttons">
-              <a class="button primary" href="#menus">Explore food &amp; drink menus</a>
-              <a class="button" href="#bookings">Make a booking</a>
+              <a class="button primary" href="#menus">Explore the summer menu</a>
+              <a class="button" href="#bookings">Book a table</a>
             </div>
           </div>
 
-          <div class="section-block" id="world-cup">
-            <div class="eyebrow">World Cup nights</div>
+          <div class="section-block match" id="world-cup">
+            <div class="eyebrow">Match nights</div>
             <div class="split">
               <div>
-                <h3>Where to watch the FIFA World Cup 2026</h3>
+                <h3>Watch the big games somewhere that still feels like a pub</h3>
                 <p>
-                  England surged to a thrilling win against Croatia in their opening fixture last night. Next up for England are Ghana at 9pm on Tuesday.
-                  In the meantime, there are 21 more matches to enjoy with a pint in hand.
+                  Keep the screens, keep the atmosphere and keep the food coming. Pick a venue with the right setup for your night and book early for
+                  the fixtures you care about.
                 </p>
               </div>
               <div class="callout">
-                <div class="label">Key fixtures</div>
-                <h4>England vs Ghana</h4>
-                <p>23 Jun, 9pm</p>
+                <div class="label">Best for</div>
+                <h4>Big screens and easy viewing</h4>
+                <p>Pick your spot early for the busiest nights.</p>
                 <div style="height:10px"></div>
-                <h4>England vs Panama</h4>
-                <p>27 Jun, 10pm</p>
+                <h4>Food and pints in one place</h4>
+                <p>Stay put for the full match and the post-game chat.</p>
               </div>
             </div>
             <div class="list-grid">
               <div class="mini">
                 <div class="label">Live screens</div>
-                <strong>Every match, every pub</strong>
+                <strong>Matchday viewing done properly</strong>
                 <span>Selected pubs and bars will show the full tournament live.</span>
               </div>
               <div class="mini">
-                <div class="label">Offer</div>
-                <strong>Guinness on us</strong>
-                <span>New loyalty sign-ups get a complimentary pint voucher in the app.</span>
+                <div class="label">Food &amp; drink</div>
+                <strong>Cold drinks, hot food, no fuss</strong>
+                <span>Stay for the whole game without needing to move venue.</span>
               </div>
               <div class="mini">
-                <div class="label">Atmosphere</div>
-                <strong>Food, pints and the crowd</strong>
-                <span>Not a sports bar gimmick. Just a proper pub when the football’s on.</span>
+                <div class="label">Plan ahead</div>
+                <strong>Book the nights you care about</strong>
+                <span>The bigger fixtures will fill first, so secure a table early.</span>
               </div>
             </div>
             <div class="buttons">
-              <a class="button dark" href="#">Find World Cup pubs</a>
-              <a class="button" href="#">Book your spot</a>
+              <a class="button dark" href="#">Find match-night pubs</a>
+              <a class="button" href="#">Book your table</a>
             </div>
           </div>
 
-          <div class="section-block" id="fathers-day">
-            <div class="eyebrow">Father’s Day weekend</div>
-            <h3>The perfect Father’s Day, all weekend long</h3>
+          <div class="section-block fathers" id="fathers-day">
+            <div class="eyebrow">Father’s Day</div>
+            <h3>A relaxed Father’s Day, done properly</h3>
             <p>
-              Father’s Day weekend, 19th–21st June, is almost upon us, and we can’t think of a better excuse to pull up a chair with the main man,
-              and treat him to a proper catch-up over perfectly poured pints, excellent wine and award-winning food.
+              Brunch, roast or a long lunch — whichever way you celebrate, make it easy with a booking, a good table and a few favourites on the
+              menu.
             </p>
             <div class="cards">
               <div class="card">
-                <div class="label">Best for</div>
-                <h4>Brunch, Sunday roast, or drinks in the bar</h4>
-                <p>Bookings are open for the whole weekend, including those who just want to inspect the ale selection.</p>
+                <div class="label">Weekend plans</div>
+                <h4>Brunch, roast or drinks in the bar</h4>
+                <p>Choose the pace that suits your family and book in early.</p>
               </div>
               <div class="card">
                 <div class="label">Giftable</div>
-                <h4>Liberty to spend it how he likes</h4>
-                <p>A long lunch, a round with friends, or an excuse to disappear to the pub for a few hours.</p>
+                <h4>A voucher if he’d rather choose later</h4>
+                <p>Useful when the diary is already full but you still want to mark the occasion.</p>
               </div>
               <div class="card">
                 <div class="label">Practical</div>
                 <h4>Reserve ahead rather than wing it</h4>
-                <p>Weekend bookings go first. Gift vouchers work when the calendar is already full.</p>
+                <p>Weekend tables go first, especially for the big family spots.</p>
               </div>
             </div>
             <div class="buttons">
-              <a class="button primary" href="#">Make a booking in Jersey</a>
-              <a class="button" href="#">Make a booking in Guernsey</a>
+              <a class="button primary" href="#">Book in Jersey</a>
+              <a class="button" href="#">Book in Guernsey</a>
               <a class="button dark" href="#">Buy a gift voucher</a>
             </div>
           </div>
 
-          <div class="section-block" id="staycations">
-            <div class="eyebrow">Summer staycations</div>
-            <h3>Looking for a staycation this summer?</h3>
+          <div class="section-block stay" id="staycations">
+            <div class="eyebrow">Stay a little longer</div>
+            <h3>Turn dinner into a night away</h3>
             <p>
-              Why not hop over to the mainland and stay in one of our sister pubs with rooms. Butcombe Inns and Butcombe Boutique Inns are located in
-              some of the most scenic corners of the south of England.
+              Our sister pubs with rooms give you the same easy-going atmosphere with a proper bed, a great breakfast and a reason to linger.
             </p>
             <div class="split">
               <div class="callout">
                 <div class="label">Rooms</div>
-                <h4>Stylish, comfortable and properly practical</h4>
+                <h4>Stylish, comfortable and practical</h4>
                 <p>Family rooms available, dog-friendly rooms too, and food and drinks throughout the stay.</p>
               </div>
               <div class="callout">
                 <div class="label">Offer</div>
-                <h4>30% off selected Boutique Inns</h4>
-                <p>Keep the pub feeling, but make it a night away.</p>
+                <h4>Keep the pub feeling, make it a night away</h4>
+                <p>30% off selected Boutique Inns for a simple summer escape.</p>
               </div>
             </div>
             <div class="buttons">
-              <a class="button primary" href="#">Explore Butcombe Boutique Inns</a>
+              <a class="button primary" href="#">Explore Boutique Inns</a>
               <a class="button" href="#">Explore Butcombe Inns</a>
               <a class="button dark" href="#">Book a staycation</a>
             </div>
           </div>
 
-          <div class="section-block">
-            <div class="eyebrow">Stock up &amp; loyalty</div>
-            <h3>Drinks stores, loyalty points and the practical bits</h3>
+          <div class="section-block loyalty-block">
+            <div class="eyebrow">The practical bit</div>
+            <h3>Stock up, save your points and keep the weekend going</h3>
             <p>
-              Liberation Drinks stores carry the Channel Islands’ widest range of wines, spirits, beers, lagers, ciders and soft drinks, with an
-              ever-changing selection of offers.
+              Visit the drinks stores for wine, beer, cider and soft drinks, or use your membership to collect points and unlock more offers.
             </p>
             <div class="loyalty-row">
               <div class="card">
@@ -838,7 +863,7 @@
           <div class="foot-card">
             <div class="label">Email</div>
             <a href="mailto:info@liberationgroup.com">info@liberationgroup.com</a>
-            <p style="margin-top: 8px;">Brand colours and layout tuned to feel like a premium newsletter rather than a promo blast.</p>
+            <p style="margin-top: 8px;">For bookings, offers and the latest updates, start at the website or get in touch with the team.</p>
           </div>
           <div class="foot-card">
             <div class="label">Address</div>
